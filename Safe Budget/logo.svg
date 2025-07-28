@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#3fa7f5" opacity="0.1"/>
+  
+  <!-- Piggy bank body -->
+  <ellipse cx="32" cy="36" rx="18" ry="20" fill="#43d9a3"/>
+  
+  <!-- Piggy bank snout -->
+  <ellipse cx="32" cy="28" rx="8" ry="6" fill="#43d9a3"/>
+  
+  <!-- Eyes -->
+  <circle cx="28" cy="26" r="2" fill="#222b38"/>
+  <circle cx="36" cy="26" r="2" fill="#222b38"/>
+  
+  <!-- Nostrils -->
+  <circle cx="30" cy="30" r="1" fill="#222b38"/>
+  <circle cx="34" cy="30" r="1" fill="#222b38"/>
+  
+  <!-- Coin slot -->
+  <rect x="30" y="20" width="4" height="8" fill="#222b38" rx="2"/>
+  
+  <!-- Legs -->
+  <rect x="24" y="50" width="3" height="8" fill="#43d9a3" rx="1.5"/>
+  <rect x="37" y="50" width="3" height="8" fill="#43d9a3" rx="1.5"/>
+  
+  <!-- Coins -->
+  <circle cx="26" cy="44" r="3" fill="#ffd700"/>
+  <circle cx="38" cy="42" r="2.5" fill="#ffd700"/>
+  <circle cx="32" cy="48" r="2" fill="#ffd700"/>
+  
+  <!-- Dollar sign on coins -->
+  <text x="26" y="47" font-family="Arial" font-size="4" fill="#222b38" text-anchor="middle">$</text>
+  <text x="38" y="45" font-family="Arial" font-size="3" fill="#222b38" text-anchor="middle">$</text>
+  <text x="32" y="50" font-family="Arial" font-size="3" fill="#222b38" text-anchor="middle">$</text>
+</svg> 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safe Budget – Take Control of Your Finances</title>
+  <meta name="description" content="Safe Budget helps you manage your money with ease and confidence. Simple, secure, and powerful budgeting for everyone." />
+  <meta name="keywords" content="budget, finance, money, savings, app, personal finance, safe budget" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23a3d8f4'/%3E%3Cpath d='M20 32a12 12 0 1 1 24 0 12 12 0 0 1-24 0zm12-8v16m-8-8h16' stroke='%23222b38' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Safe Budget – Take Control of Your Finances" />
+  <meta property="og:description" content="Safe Budget helps you manage your money with ease and confidence. Simple, secure, and powerful budgeting for everyone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Safe Budget – Take Control of Your Finances" />
+  <meta name="twitter:description" content="Safe Budget helps you manage your money with ease and confidence. Simple, secure, and powerful budgeting for everyone." />
+  <meta name="twitter:image" content="https://yourdomain.com/og-image.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="live-bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></canvas>
+  <a href="#features" class="skip-link">Skip to main content</a>
+  <canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:999;display:none;"></canvas>
+  <header class="hero" id="hero">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Safe Budget Logo" class="hero-logo" />
+    </div>
+    <h1>Safe Budget</h1>
+    <p>Take Control of Your Finances with Confidence</p>
+    <a href="#download" class="cta nav-link">Get Started</a>
+  </header>
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-brand">
+      <img src="logo.jpg" alt="Safe Budget" class="nav-logo" />
+      <span class="nav-brand-text">Safe Budget</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#how-it-works" class="nav-link">How It Works</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#download" class="nav-link">Download</a>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+  <div class="wave-divider"></div>
+  <section class="features fade-in" id="features" aria-label="Features section">
+    <h2>Why Choose Safe Budget?</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Simple & Intuitive</h3>
+        <p>Easy-to-use interface for everyone.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure</h3>
+        <p>Your data is protected with top-notch security.</p>
+      </div>
+      <div class="feature">
+        <h3>Powerful Insights</h3>
+        <p>Visualize your spending and savings.</p>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="testimonials fade-in" id="testimonials" aria-label="Testimonials section">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-carousel">
+      <button class="testimonial-prev" aria-label="Previous testimonial">&#8592;</button>
+      <div class="testimonial-list" aria-live="polite" tabindex="0">
+        <blockquote class="testimonial active">
+          <p>"Safe Budget helped me finally get my finances under control! Highly recommended."</p>
+          <footer>- Alex P.</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"The insights and simplicity are unmatched. I love using Safe Budget every day."</p>
+          <footer>- Jamie L.</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"I feel so much more confident about my money now. Thank you, Safe Budget!"</p>
+          <footer>- Morgan S.</footer>
+        </blockquote>
+      </div>
+      <button class="testimonial-next" aria-label="Next testimonial">&#8594;</button>
+    </div>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="screenshots fade-in" aria-label="Screenshots section">
+    <h2>See Safe Budget in Action</h2>
+    <p class="subtitle">Explore the intuitive interface and powerful features that make budgeting simple and effective</p>
+    <div class="screenshot-filters">
+      <button class="filter-btn active" data-filter="all">All Features</button>
+      <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+      <button class="filter-btn" data-filter="planning">Planning</button>
+      <button class="filter-btn" data-filter="tracking">Tracking</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+    <div class="screenshots-grid">
+      <div class="screenshot-item" data-category="dashboard">
+        <div class="screenshot-number">1</div>
+        <img src="assets/5180f2d7-91fd-4df2-a31b-2eed5665e52f.JPG" alt="Dashboard Overview" />
+        <div class="screenshot-caption">Dashboard Overview</div>
+      </div>
+      <div class="screenshot-item" data-category="planning">
+        <div class="screenshot-number">2</div>
+        <img src="assets/5f586e99-b970-49e4-8a9a-0cdf54789e32.JPG" alt="Budget Planning" />
+        <div class="screenshot-caption">Budget Planning</div>
+      </div>
+      <div class="screenshot-item" data-category="tracking">
+        <div class="screenshot-number">3</div>
+        <img src="assets/6590630d-772e-4fe6-980f-12818662fd43.JPG" alt="Expense Tracking" />
+        <div class="screenshot-caption">Expense Tracking</div>
+      </div>
+      <div class="screenshot-item" data-category="planning">
+        <div class="screenshot-number">4</div>
+        <img src="assets/a5c2c902-f3cb-4142-ae70-211f1db19b66.JPG" alt="Savings Goals" />
+        <div class="screenshot-caption">Savings Goals</div>
+      </div>
+      <div class="screenshot-item" data-category="dashboard">
+        <div class="screenshot-number">5</div>
+        <img src="assets/ca37beaa-8229-47b1-a36a-5e5883dd4da8.JPG" alt="Analytics & Reports" />
+        <div class="screenshot-caption">Analytics & Reports</div>
+      </div>
+      <div class="screenshot-item" data-category="mobile">
+        <div class="screenshot-number">6</div>
+        <img src="assets/d018f6dc-45b2-4854-b100-33d2ea2b8a83.JPG" alt="Mobile Experience" />
+        <div class="screenshot-caption">Mobile Experience</div>
+      </div>
+      <div class="screenshot-item" data-category="tracking">
+        <div class="screenshot-number">7</div>
+        <img src="assets/dfdab1f0-6001-4987-a9ea-918e52747309.JPG" alt="Settings & Preferences" />
+        <div class="screenshot-caption">Settings & Preferences</div>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="how-it-works fade-in" id="how-it-works" aria-label="How it works section">
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Download</strong> the Safe Budget app</li>
+      <li><strong>Set up</strong> your budget and goals</li>
+      <li><strong>Track</strong> your spending and savings</li>
+      <li><strong>Achieve</strong> financial peace of mind!</li>
+    </ol>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="about fade-in" id="about" aria-label="About section">
+    <h2>About Safe Budget</h2>
+    <p>Safe Budget was created to help you manage your money with ease and confidence. Our mission is to empower everyone to achieve financial wellness.</p>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="faq fade-in" id="faq" aria-label="FAQ section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Is Safe Budget free?<span class="chevron" aria-hidden="true">▶</span></button>
+        <div class="faq-answer">
+          <p>Yes! Safe Budget offers a free version with all the essential features. Premium options are available for advanced users.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is my data secure?<span class="chevron" aria-hidden="true">▶</span></button>
+        <div class="faq-answer">
+          <p>Absolutely. We use industry-standard encryption to keep your data safe and private.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I use Safe Budget on multiple devices?<span class="chevron" aria-hidden="true">▶</span></button>
+        <div class="faq-answer">
+          <p>Yes, your data syncs securely across all your devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"></div>
+  <section class="download fade-in" id="download" aria-label="Download section">
+    <h2>Get Safe Budget</h2>
+    <p>Ready to take control? Download the app or contact us for more info.</p>
+    <a href="#" class="cta pulse">Download Now</a>
+    <form class="newsletter-form" id="newsletter-form">
+      <label for="newsletter-email">Subscribe for updates:</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required />
+      <button type="submit" class="cta">Subscribe</button>
+      <div class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></div>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2024 Safe Budget. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter" class="animated"><svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.09 9.09 0 0 1-2.88 1.1A4.48 4.48 0 0 0 16.5 0c-2.5 0-4.5 2.01-4.5 4.5 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.67 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.95 3.65A4.48 4.48 0 0 1 .96 6v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.16 2.97 4.07 3A9.05 9.05 0 0 1 0 19.54 12.8 12.8 0 0 0 6.92 22c8.28 0 12.81-6.86 12.81-12.81 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z"></path></svg></a> |
+      <a href="#" aria-label="Facebook" class="animated"><svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H6v4h4v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a> |
+      <a href="#" aria-label="Instagram" class="animated"><svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
+    </div>
+  </footer>
+  <button id="back-to-top" title="Back to top">&#8679;</button>
+  <script src="script.js"></script>
+</body>
+</html>
